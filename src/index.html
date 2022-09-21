@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
   </head>
-
   <body>
     <main class="product-listing-wrapper">
-    </main>
-
-    <script src="api/products.js"></script>
+    <div class="popupBox">
+      <div class="boxBody">
+        <div class="boxHeader">
+          Вы добавили в корзину:
+          <div class="headerTriangle"></div>
+        </div>
+        <div class="boxCenter"></div>
+        <div class="boxFooter">
+          <button class="boxFooterButton">Перейти в корзину</button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <script type="text/javascript" src="./api/products.js"></script>
+      <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

@@ -1,0 +1,235 @@
+@import url(./nullStyle.css);
+.body {
+  position: relative;
+}
+.item {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item img {
+  width: 200px;
+}
+.info {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: start;
+  padding: 0px 0px 10px 20px;
+}
+.price {
+  font-size: 22px;
+  padding: 0px 0px 0px 0px;
+}
+.btn {
+  padding: 30px 0px 0px 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.btnOrder {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  background-color: rgba(204, 7, 56, 0.89);
+  width: 130px;
+  height: 30px;
+}
+.btnOrder a {
+  color: white;
+  text-decoration: none;
+}
+.btnBox {
+  font-size: 16px;
+  text-align: center;
+  background-color: rgb(231, 227, 227);
+  width: 130px;
+  height: 30px;
+}
+.btnBox a {
+  color: black;
+  text-decoration: none;
+}
+.popupOrder {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 255, 255, 0);
+}
+
+.popupOrderBody {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popupOrderContent {
+  display: flex;
+  flex-direction: column;
+  border: rgba(128, 128, 128, 0.425) solid 4px;
+  background-color: rgba(245, 245, 245, 0.979);
+  color: black;
+  width: 900px;
+  max-height: 450px;
+  justify-content: start;
+}
+.popupOrderHeader {
+  position: relative;
+  padding: 20px 10px 40px 10px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+}
+.popupX {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  color: rgba(92, 91, 91, 0.425);
+}
+.popupOrderCenter {
+  display: flex;
+  justify-content: space-between;
+}
+.popupOrderCenterProduct {
+  display: flex;
+  padding: 0px 0px 0px 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+.popupOrderCenterProduct {
+  font-size: 20px;
+  color: rgba(204, 7, 56, 0.89);
+}
+.productImg {
+  width: 220px;
+}
+
+.productComment {
+  display: flex;
+  gap: 20px;
+  padding: 0px 0px 10px 20px;
+  border-left: rgba(204, 7, 56, 0.89) solid 4px;
+  align-items: flex-start;
+}
+.productComment p {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: end;
+  width: 100px;
+  padding: 0px 0px 0px 0px;
+}
+.productComment form {
+  margin: 0px 30px 0px 0px;
+}
+.commentArea {
+  resize: none;
+  background-color: rgba(207, 207, 207, 0.425);
+  padding: 0px 0px 0px 0px;
+  width: 400px;
+  height: 150px;
+}
+.popupOrderFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 230px 0px 0px;
+  gap: 25px;
+}
+.popupOrderFooter form {
+  display: flex;
+  font-size: 16px;
+  gap: 20px;
+  font-weight: 700;
+}
+.popupOrderFooter button {
+  margin: 0px 0px 10px 90px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  background-color: rgba(204, 7, 56, 0.89);
+  width: 130px;
+  height: 30px;
+}
+.popupBox {
+  display: none;
+}
+.boxBody {
+  box-shadow: 0 2px 4px #888888;
+  right: 10px;
+  top: 10px;
+  position: fixed;
+  width: 350px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.boxHeader {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  padding: 0px 0px 0px 10px;
+  background-color: gray;
+  min-height: 50px;
+}
+.headerTriangle {
+  width: 0px;
+  position: relative;
+  bottom: 12px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid gray;
+}
+.basketItem {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  background-color: rgb(240, 240, 240);
+}
+.boxImg {
+  padding: 15px;
+  width: 150px;
+}
+.boxInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5px;
+}
+.boxTitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+.boxPrice {
+  font-weight: 400;
+  font-size: 16px;
+}
+.boxClose {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  font-size: 12px;
+  cursor: pointer;
+  color: rgba(204, 7, 56, 0.89);
+  font-weight: 700;
+}
+.boxFooter {
+  padding: 0px 0px 20px 0px;
+  background-color: rgb(240, 240, 240);
+}
+.boxFooterButton {
+  margin: 0px 0px 0px 10px;
+  width: 170px;
+  height: 30px;
+  color: white;
+  background-color: rgba(204, 7, 56, 0.89);
+}
